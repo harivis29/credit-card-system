@@ -16,7 +16,6 @@ function addCard(cardData, callback) {
         }
       })
         .catch(function() {
-        // This is where you run code if the server returns any errors
     });
 }
 
@@ -25,16 +24,13 @@ function getExistingCards(callback){
     method: "GET",
     headers: new Headers()
   };
-  fetch(`${basePath}fetchCards`, fetchData) // Call the fetch function passing the url of the API as a parameter
+  fetch(`${basePath}fetchCards`, fetchData)
     .then( res => res.json()).then( resObj => {
       if(callback && typeof callback === "function"){
         callback(resObj.data)
       }
     })
-
-    
     .catch(function() {
-      // This is where you run code if the server returns any errors
   });
 }
 
