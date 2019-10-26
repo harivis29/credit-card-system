@@ -19,4 +19,10 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ## Steps to run the code
 
-1. install node modules for react build and run the command npm start
+1. Install node modules for react build and run the command 
+## `npm start`
+2. Install server specific node modules from serve folder and run command
+## `npm start`
+ from server folder which will start the server
+3. To run unit test cases use command
+## `npm test`
