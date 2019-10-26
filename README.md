@@ -1,10 +1,10 @@
-### Credit Card System
+# Credit Card System
 
 ## Steps to run the code
 
-##Back End
+## Back End
 1. Install server specific node modules from
-# `credit-card-app/server` 
+## `credit-card-app/server` 
 folder using command
 ## `npm install`
 2. Now start server using command
