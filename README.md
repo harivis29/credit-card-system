@@ -1,28 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Credit Card System
 
 ## Steps to run the code
 
-1. Install node modules for react build and run the command 
+##Back End
+1. Install server specific node modules from
+# `credit-card-app/server` 
+folder using command
+## `npm install`
+2. Now start server using command
 ## `npm start`
-2. Install server specific node modules from serve folder and run command
+
+## Front End
+1. Install node modules using command 
+## `npm install`
+2. Start the react build serve using command
 ## `npm start`
- from server folder which will start the server
-3. To run unit test cases use command
+3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Unit test cases
+
+1. Run the unit test cases using command 
 ## `npm test`
+
+
