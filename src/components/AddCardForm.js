@@ -6,7 +6,7 @@ export default class AddCardForm extends Component {
         super(props);
         this.state = {
             name: "",
-            cardNumber: "4024007124",
+            cardNumber: "",
             limit: 0,
             balance: 0,
             validCard: true

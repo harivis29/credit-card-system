@@ -12,8 +12,9 @@
 }
 #form-wrap form input {
   width: 350px;
-  height: 40px;
+  height: 30px;
   margin-top: 5px;
+  padding: 5px;
 }
 #form-wrap form #submitBtn{
   font-weight: bold;
