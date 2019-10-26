@@ -1,25 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import AddCardForm from "./components/AddCardForm";
+import Table from "./components/CardsDisplayTable";
+import "./App.css";
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      status: "success"
+    }
+    this.updateStatus = this.updateStatus.bind(this);
+  }
+
+  updateStatus(reqState) {
+    this.setState({
+      status: reqState
+    })
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <h1>Credit Card System</h1>
+      <AddCardForm updateStatus={this.updateStatus} />
+      <Table status={this.state.status} />
       </div>
     );
   }

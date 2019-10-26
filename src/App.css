@@ -1,33 +1,46 @@
 .App {
+  text-align: left;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+#form-wrap form {
+  max-width: 370px;
+}
+#form-wrap form .alert-label{
+  color: red;
+}
+#form-wrap form input {
+  width: 350px;
+  height: 40px;
+  margin-top: 5px;
+}
+#form-wrap form #submitBtn{
+  font-weight: bold;
+  padding: 5px 30px;
+  cursor: pointer;
+}
+#form-wrap form #submitBtn:disabled{
+  cursor: default;
+}
+#table-wrap #cards {
   text-align: center;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+  margin-top: 10px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#table-wrap #cards td, #cards th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#table-wrap #cards th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #dedede;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
