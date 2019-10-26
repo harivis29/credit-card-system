@@ -13,7 +13,7 @@ folder using command
 ## Front End
 1. Install node modules using command 
 ## `npm install`
-2. Start the react build serve using command
+2. Start the react build server using command
 ## `npm start`
 3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 

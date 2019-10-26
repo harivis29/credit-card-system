@@ -46,8 +46,16 @@ export default class AddCardForm extends Component {
 
         addCard(cardObj, data => {
             this.props.updateStatus("success");
+            this.clearForm();
         })
+    }
 
+    clearForm(){
+        this.setState({
+            name: "",
+            cardNumber: "",
+            limit: 0
+        })
     }
 
     validateWithLuhnAlgo(num) {
@@ -82,7 +90,7 @@ export default class AddCardForm extends Component {
                 <form onSubmit={this.addCardDetails}>
                     Name
                     <br />
-                    <input id="name" pattern="[a-zA-Z0-9\s]+" type="text" value={name} onChange={this.handleChange} />
+                    <input id="name" pattern="^[A-Za-z0-9- ]+$" type="text" value={name} onChange={this.handleChange} />
                     <br /> <br /> 
                     Card number<br />
                     <input id="cardNumber" pattern="[0-9]*" maxLength="10" type="text" value={cardNumber} onChange={this.handleChange} />

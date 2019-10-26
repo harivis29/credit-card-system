@@ -40,16 +40,16 @@ var Datastore = require("nedb");
 card.loadDatabase();
 
 app.get("/fetchCards", (req, res) => {
-  card.find({},function (err, docs) {
-    res.status(200).json({ data: docs });
+  card.find({}, (err, cards) => {
+    res.status(200).json({ data: cards });
     
   });
 });
 
 app.post("/addCard", (req, res) => {
   var doc = req.body;
-  card.insert(doc, function(err, newDoc) {
-    res.status(200).json({ data: newDoc });
+  card.insert(doc, (err, newCard) => {
+    res.status(200).json({ data: newCard });
   });
 });
 

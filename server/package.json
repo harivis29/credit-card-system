@@ -12,7 +12,7 @@
     "restful",
     "api"
   ],
-  "author": "Maximilian Schwarzmüller",
+  "author": "Harish Vishnoi",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
